@@ -361,3 +361,12 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+Monitor/Monitor/obj/Debug/net6.0/Monitor.csproj.AssemblyReference.cache
+Monitor/Monitor/obj/Debug/net6.0/ref/Monitor.dll
+Monitor/Monitor/obj/Debug/net6.0/Monitor.pdb
+Monitor/Monitor/obj/Debug/net6.0/Monitor.dll
+Monitor/Monitor/obj/Debug/net6.0/Monitor.csproj.FileListAbsolute.txt
+Monitor/Monitor/bin/Debug/net6.0/ref/Monitor.dll
+Monitor/Monitor/bin/Debug/net6.0/Monitor.pdb
+Monitor/Monitor/bin/Debug/net6.0/Monitor.dll
+Monitor/.vs/Monitor/v17/.suo
