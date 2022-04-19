@@ -2,18 +2,33 @@
 
 namespace Monitor.Class
 {
+    public enum tpMonitorService
+    {
+        AlwaysStarted,
+        AlwaysStoped
+    }
+
     public class ServicesController
     {
         private ServiceController sc;
         public bool IsRunMonitorService { get; set; }
 
-        public ServicesController(string nameService)
+        public ServicesController(string nameService, tpMonitorService tpMonitorService)
         {
             sc = new ServiceController(nameService);
             IsRunMonitorService = true;
 
-            MonitorServiceAlwaysStartedAsync();
-            //MonitorServiceAlwaysStopedAsync();
+            switch (tpMonitorService)
+            {
+                case tpMonitorService.AlwaysStarted:
+                    MonitorServiceAlwaysStartedAsync();
+                    break;
+                case tpMonitorService.AlwaysStoped:
+                    MonitorServiceAlwaysStopedAsync();
+                    break;
+                default:
+                    break;
+            }
         }
 
         private ServiceControllerStatus GetStatus
